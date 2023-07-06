@@ -1,27 +1,29 @@
-Nome tabella: auto_usate
+Table name: used_cars
 
-id                          intero                      INT                             PRIMARY_KEY AUTOINCREMENT
-marca                       stringa                     VARCHAR(25)                     NOT_NULL
-modello                     stringa                     VARCHAR(15)                     NOT_NULL
-versione                    stringa                     VARCHAR(10)                     NULL
-carrozzeria                 stringa                     VARCHAR(20)                     NULL
-alimentazione               stringa                     VARCHAR(15)                     NOT_NULL
-descrizione                 stringa                     TEXT                            NOT_NULL
-foto-1                      stringa                     TEXT                            NOT_NULL
-foto-2                      stringa                     TEXT                            NULL
-foto-3                      stringa                     TEXT                            NULL
-foto-4                      stringa                     TEXT                            NULL
-foto-5                      stringa                     TEXT                            NULL
-anno_immatricolazione       data                        YEAR                            NOT_NULL
-prezzo                      float                       FLOAT(8,2)                      NOT_NULL
-km_percorsi                 intero                      MEDIUMINT                       NOT_NULL
-potenza_kw                  intero                      TINYINT                         NOT_NULL
-n_porte                     intero                      TINYINT                         NOT_NULL
-n_posti                     intero                      TINYINT                         NOT_NULL
-tipo_cambio                 stringa                     VARCHAR(10)                     NOT_NULL
-colore_carrozzeria          stringa                     VARCHAR(20)                     NULL
-colore_interni              stringa                     VARCHAR(20)                     NULL
-tipo_vernice                stringa                     VARCHAR(12)                     NULL
-classe_emissioni_euro       intero                      TINYINT                         NOT_NULL
-n_precedenti_proprietari    intero                      TINYINT                         NULL
-data_ora_inserimento        data                        DATETIME                        NOT_NULL
+id                        integer                   INT                             PRIMARY_KEY AUTOINCREMENT UNSIGNED
+brand                     string                    VARCHAR(25)                     NOT_NULL
+model                     string                    VARCHAR(15)                     NOT_NULL
+version                   string                    VARCHAR(10)                     NULL
+plate_number              string                    VARCHAR(9)                      NOT_NULL
+car_body                  string                    VARCHAR(20)                     NULL
+power_supply              string                    VARCHAR(15)                     NOT_NULL
+description               string                    TEXT                            NOT_NULL
+photo-1                   string                    TEXT                            NULL
+photo-2                   string                    TEXT                            NULL
+photo-3                   string                    TEXT                            NULL
+photo-4                   string                    TEXT                            NULL
+photo-5                   string                    TEXT                            NULL
+enrollement_year          data                      YEAR                            NOT_NULL
+price                     float                     FLOAT(8,2)                      NOT_NULL
+travelled_km              integer                   MEDIUMINT                       NOT_NULL UNSIGNED
+power_kw                  integer                   TINYINT                         NOT_NULL UNSIGNED
+horsepower                integer                   TINYINT                         NOT_NULL UNSIGNED
+doors_number              integer                   TINYINT                         NOT_NULL UNSIGNED
+seats_number              integer                   TINYINT                         NOT_NULL UNSIGNED
+gearbox                   string                    VARCHAR(10)                     NOT_NULL
+body_colour               string                    VARCHAR(20)                     NOT_NULL
+interior_colour           string                    VARCHAR(20)                     NULL
+paint_type                string                    VARCHAR(12)                     NULL
+euro_emission_class       integer                   TINYINT                         NOT_NULL UNSIGNED
+previous_owners_number    integer                   TINYINT                         NULL UNSIGNED
+entry_date_time           data                      DATETIME                        NOT_NULL
