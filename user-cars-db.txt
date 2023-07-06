@@ -1,0 +1,27 @@
+Nome tabella: auto_usate
+
+id                          intero                      INT                             PRIMARY_KEY AUTOINCREMENT
+marca                       stringa                     VARCHAR(25)                     NOT_NULL
+modello                     stringa                     VARCHAR(15)                     NOT_NULL
+versione                    stringa                     VARCHAR(10)                     NULL
+carrozzeria                 stringa                     VARCHAR(20)                     NULL
+alimentazione               stringa                     VARCHAR(15)                     NOT_NULL
+descrizione                 stringa                     TEXT                            NOT_NULL
+foto-1                      stringa                     TEXT                            NOT_NULL
+foto-2                      stringa                     TEXT                            NULL
+foto-3                      stringa                     TEXT                            NULL
+foto-4                      stringa                     TEXT                            NULL
+foto-5                      stringa                     TEXT                            NULL
+anno_immatricolazione       data                        YEAR                            NOT_NULL
+prezzo                      float                       FLOAT(8,2)                      NOT_NULL
+km_percorsi                 intero                      MEDIUMINT                       NOT_NULL
+potenza_kw                  intero                      TINYINT                         NOT_NULL
+n_porte                     intero                      TINYINT                         NOT_NULL
+n_posti                     intero                      TINYINT                         NOT_NULL
+tipo_cambio                 stringa                     VARCHAR(10)                     NOT_NULL
+colore_carrozzeria          stringa                     VARCHAR(20)                     NULL
+colore_interni              stringa                     VARCHAR(20)                     NULL
+tipo_vernice                stringa                     VARCHAR(12)                     NULL
+classe_emissioni_euro       intero                      TINYINT                         NOT_NULL
+n_precedenti_proprietari    intero                      TINYINT                         NULL
+data_ora_inserimento        data                        DATETIME                        NOT_NULL
